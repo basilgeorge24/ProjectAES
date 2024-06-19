@@ -1,0 +1,30 @@
+<!-- Code for AES Encryption using CryptoJS library -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AES Encryption</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>AES Encryption</h2>
+      <textarea id="plainText" placeholder="Enter plain text"></textarea>
+      <input
+        type="text"
+        id="encryptionKey"
+        placeholder="Enter encryption key"
+      />
+      <button onclick="encrypt()">Encrypt</button>
+      <textarea
+        id="cipherText"
+        placeholder="Cipher text will appear here"
+        readonly
+      ></textarea>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
